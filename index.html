@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="conteudo">
+        <h2>Gerador de senha</h2>
+        <div class="slider_main">
+            <input type="range" value="8" min="4" max="25" class="slider"
+            oninput="this.nextElementSibling.value = this.value" id="slider"> <!-- usei oninput para o valor do proximo elemento(output) ter o mesmo valor desse(input) -->
+            <output>8</output>
+        </div>
+        <button id="gerador" class="action-btn">
+            Generador <i class="fab fa-keycdn"></i>
+        </button>
+        <label>Incluir caracteres especiais?
+            <input type="checkbox" checked="checked" id="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <div class="output">
+            <h5 id="pwd_text"><span>Clique no botão gerador</span></h5>
+            <button id="clipboard" class="clipboard">
+                <i class="fas fa-clipboard"></i>
+            </button>
+        </div>
+        <span id="copiarsenha"></span>
+    </div>
+</body>
+</html>

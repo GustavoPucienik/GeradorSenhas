@@ -3,18 +3,56 @@
     padding: 0;
 }
 body{
+}
+.all{
+    height: 100vh;
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 .conteudo{
-    padding: 1em;
+    padding: 1.5em;
     background: #777;
     border: 1px solid #000;
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
+h2{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.slider_main{
+    margin: 1em;
+    text-align: center;
+}
+
+.action-btn{
+    padding: 1vh 1vw;
+    margin-bottom: 2vh;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.include{
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: end;
+}
+
+.output{
+    margin: 1em 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.output button{
+    padding: 10px;
+    margin-top: 1.5em;
+}
+
+
 #copiarsenha{
     background: #777;
-    height: 50px;
-    width: 50px;
 }
